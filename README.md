@@ -35,8 +35,6 @@ composer require ramsey/collection
 
 ## Usage
 
-The [latest class API documentation][apidocs] is available online.
-
 Examples of how to use this framework can be found in the
 [Wiki pages](https://github.com/ramsey/collection/wiki/Examples).
 
@@ -57,64 +55,22 @@ composer install
 
 Now, you are ready to develop!
 
-### Tooling
+## Coordinated Disclosure
 
-This project uses [CaptainHook](https://github.com/CaptainHookPhp/captainhook)
-to validate all staged changes prior to commit.
+Keeping user information safe and secure is a top priority, and we welcome the
+contribution of external security researchers. If you believe you've found a
+security issue in software that is maintained in this repository, please read
+[SECURITY.md][] for instructions on submitting a vulnerability report.
 
-#### Composer Commands
+## ramsey/collection for Enterprise
 
-To see all the commands available in the project `dev` namespace for
-Composer, type:
+Available as part of the Tidelift Subscription.
 
-``` bash
-composer list dev
-```
-
-#### Coding Standards
-
-This project follows a superset of [PSR-12](https://www.php-fig.org/psr/psr-12/)
-coding standards, enforced by [PHP_CodeSniffer](https://github.com/squizlabs/PHP_CodeSniffer).
-The project PHP_CodeSniffer configuration may be found in `phpcs.xml.dist`.
-
-CaptainHook will run PHP_CodeSniffer before committing. It will attempt to fix
-any errors it can, and it will reject the commit if there are any un-fixable
-issues. Many issues can be fixed automatically and will be done so pre-commit.
-
-You may lint the entire codebase using PHP_CodeSniffer with the following
-commands:
-
-``` bash
-# Lint
-composer dev:lint
-
-# Lint and autofix
-composer dev:lint:fix
-```
-
-#### Static Analysis
-
-This project uses a combination of [PHPStan](https://github.com/phpstan/phpstan)
-and [Psalm](https://github.com/vimeo/psalm) to provide static analysis of PHP
-code. Configurations for these are in `phpstan.neon.dist` and `psalm.xml`,
-respectively.
-
-CaptainHook will run PHPStan and Psalm before committing. The pre-commit hook
-does not attempt to fix any static analysis errors. Instead, the commit will
-fail, and you must fix the errors manually.
-
-You may run static analysis manually across the whole codebase with the
-following command:
-
-``` bash
-# Static analysis
-composer dev:analyze
-```
-
-#### Project Structure
-
-This project uses [pds/skeleton](https://github.com/php-pds/skeleton) as its
-base folder structure and layout.
+The maintainers of ramsey/collection and thousands of other packages are working
+with Tidelift to deliver commercial support and maintenance for the open source
+packages you use to build your applications. Save time, reduce risk, and improve
+code health, while paying the maintainers of the exact packages you use.
+[Learn more.](https://tidelift.com/subscription/pkg/packagist-ramsey-collection?utm_source=undefined&utm_medium=referral&utm_campaign=enterprise&utm_term=repo)
 
 ## Copyright and License
 
@@ -123,4 +79,4 @@ and licensed for use under the terms of the
 MIT License (MIT). Please see [LICENSE](LICENSE) for more information.
 
 [java]: http://docs.oracle.com/javase/8/docs/technotes/guides/collections/index.html
-[apidocs]: https://docs.benramsey.com/ramsey-collection/latest/
+[security.md]: https://github.com/ramsey/collection/blob/master/SECURITY.md
