@@ -23,7 +23,7 @@
     },
     "require-dev": {
         "fakerphp/faker": "^1.5",
-        "jangregor/phpstan-prophecy": "^0.6",
+        "jangregor/phpstan-prophecy": "^0.8",
         "phpspec/prophecy-phpunit": "^2.0",
         "ramsey/devtools": "^1.4"
     },
